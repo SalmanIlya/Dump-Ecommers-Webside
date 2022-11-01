@@ -6,32 +6,30 @@ import axios from "axios";
 import "./style.css";
 
 const MainPoroduct = () => {
-  const [allProduct, SetAllProduct] = useState([]);
+
+  const [allProduct, setAllProduct] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [category, setCategory] = useState("");
+
   useEffect(() => {
     const fetchdata = async () => {
       const response = await axios.get("https://fakestoreapi.com/products");
-      SetAllProduct(response.data);
+      const cats = response.data.map((product) => {
+        return product.category;
+      });
+      setCategories([...new Set(cats)]);
+      setAllProduct(response.data);
     };
     fetchdata();
   }, []);
 
-  const fetchdata = (category) => {
-    console.log(category);
-    const uptodate = allProduct.filter((curElm) => {
-      console.log(curElm);
-      console.log("curElm.cata", curElm.category, category);
-
-      return curElm.category === category;
-    });
-    SetAllProduct(uptodate);
-  };
 
   return (
     <div>
       <HeroSection />
       <div className="d-flex ">
-        <SideNav allProduct={allProduct} fetchdata={fetchdata} />
-        <Product allProduct={allProduct} />
+        <SideNav categories={categories} setCategory={(category) => setCategory(category)} />
+        <Product allProduct={allProduct} category={category} />
       </div>
     </div>
   );
