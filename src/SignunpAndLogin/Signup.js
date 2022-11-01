@@ -1,73 +1,55 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import axios from 'axios'
+import React, { useState } from 'react'
+import "./style.css"
 const Signin = () => {
+  const [state,setstate]=useState({
+    name:"",
+    email:"",
+    Password:"",
+    ConfurmPassword:""
+    
+  })
+  const changeHandler=(e)=>{
+const {name,value}=e.target
+setstate({
+  ...state,
+  [name]:value
+})
+  }
+  const clickhandler=()=>{
+    axios.post("http://localhost:5000/api/user/",state).then((res)=>{
+      alert(res.data.massage)
+    })
+  }
+
   return (
-    <form className=' form-signin'>
 
-    <h3 className='text-center'>Sign In</h3>
-    <div className="mb-3">
-      <label>Name</label>
-      <input
-        type="text"
-        className="form-control"
-        placeholder="Enter Name"
-      />
-    </div>
-    <div className="mb-3">
-      <label>Email address</label>
-      <input
-        type="email"
-        className="form-control"
-        placeholder="Enter email"
-      />
-    </div>
-    <div className="mb-3">
-      <label>Password</label>
-      <input
-        type="password"
-        className="form-control"
-        placeholder="Enter password"
-      />
-    </div>
-    <div className="mb-3">
-      <label>Confurm Password</label>
-      <input
-        type="password"
-        className="form-control"
-        placeholder="Enter confurm password"
-      />
-    </div>
-    <div className="mb-3">
-      <div className="custom-control custom-checkbox">
-        <input
-          type="checkbox"
-          className="custom-control-input"
-          id="customCheck1"
-        />
-        <label className="custom-control-label" htmlFor="customCheck1">
-          Remember me
-        </label>
-      </div>
-    </div>
-    <div className="d-grid">
-      <button type="submit" className="btn btn-warning ">
-        Create 
-      </button>
-    </div>
-    <br/>
-    <p className='text-center'>or</p>
-    <div className="d-grid">
-      <button type="submit" className="btn btn-warning ">
-        Signin
-      </button>
-    </div>
-    <p className="forgot-password text-right">
-      Forgot <Link to="#">password?</Link>
-    </p>
-  </form>
+    <div className='log-form'>
 
-    )
+<div className='d-flex flex-column container w-25 h-50  text-center card'>
+<h1 className='mt-5'>
+    <strong>
+      Sign in
+    </strong>
+  </h1>
+<input onChange={(e)=>{changeHandler(e)}} value={state.name} type="text" name='name' className='m-3 input' placeholder='Name'  />
+<input onChange={(e)=>{changeHandler(e)}} value={state.email} type="text" name='email' className='m-3 input' placeholder='Email'  />
+<input onChange={(e)=>{changeHandler(e)}} value={state.Password} type="password" name='Password' className='m-3 input' placeholder='Password'  />
+<input onChange={(e)=>{changeHandler(e)}} value={state.confurmPassword} type="password" name='confurmPassword' className='m-3 input' placeholder='ConfurmPassword'/>
+<button className='btn btn-warning m-3'>
+  Create Account
+</button>
+<div className='text-center'>
+or
+</div>
+<button className='btn btn-warning m-3'onClick={()=>{clickhandler()}}>
+Signin
+</button>
+</div>
+
+
+    </div>
+  )
 }
 
 export default Signin

@@ -1,56 +1,31 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
+import "./style.css"
 const Signin = () => {
   return (
-    <form className=' form-signin'>
+    <div className='log-form'>
 
-    <h3 className='text-center'>Sign In</h3>
-    <div className="mb-3">
-      <label>Email address</label>
-      <input
-        type="email"
-        className="form-control"
-        placeholder="Enter email"
-      />
-    </div>
-    <div className="mb-3">
-      <label>Password</label>
-      <input
-        type="password"
-        className="form-control"
-        placeholder="Enter password"
-      />
-    </div>
-    <div className="mb-3">
-      <div className="custom-control custom-checkbox">
-        <input
-          type="checkbox"
-          className="custom-control-input"
-          id="customCheck1"
-        />
-        <label className="custom-control-label" htmlFor="customCheck1">
-          Remember me
-        </label>
-      </div>
-    </div>
-    <div className="d-grid">
-      <button type="submit" className="btn btn-warning ">
-        Login
-      </button>
-    </div><br/>
-<p className='text-center mb-3 ml-3'>or</p>
-    <div className="d-grid">
-      <button type="submit" className="btn btn-warning ">
-        create account
-      </button>
-    </div>
-    <p className="forgot-password text-right">
-      Forgot <Link to="#">password?</Link>
-    </p>
-  </form>
+<div className='d-flex flex-column container w-25 h-25 m-5 p-2 card text-center'>
+<h1 className='mt-5'>
+    <strong>
+      Sign in
+    </strong>
+  </h1>
+<input type="text" name='email' className='m-3 input' placeholder='Email'  />
+<input type="text" name='subject' className='m-3 input' placeholder='Password'  />
+<button className='btn btn-warning m-3'>
+  Signin 
+</button>
+<div className='text-center'>
+or
+</div>
+<button className='btn btn-warning m-3'>
+  signup
+</button>
+</div>
 
-    )
+
+    </div>
+  )
 }
 
 export default Signin
