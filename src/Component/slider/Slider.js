@@ -1,39 +1,34 @@
 import Carousel from 'react-bootstrap/Carousel';
 import "./style.css"
-function UncontrolledExample() {
+function IndividualIntervalsExample() {
   return (
     <Carousel>
-      <Carousel.Item>
-      
-
-          <img
-className="d-block images col-xs-3  col-sm-6  col-md-7 col-lg-9" 
-src="/slider/1slider.jpg"
-alt="First slide"
-/>
-       
-      
-      </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={1000}>
         <img
-          className="d-block  images col-xs-3  col-sm-5  col-md-7 col-lg-9 "
-          src="slider/2slider.jpg"
+          className="d-block images col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12"
+          src="slider/1.jpg"
+          alt="First slide"
+        />
+     
+      </Carousel.Item>
+      <Carousel.Item interval={1000}>
+        <img
+          className="d-block images col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12"
+          src="slider/2.jpg"
           alt="Second slide"
         />
-
-   
+       
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item interval={1000}>
         <img
-          className="d-block   images  col-xs-3  col-sm-5  col-md-7 col-lg-9 "
-          src="/slider/3slider.jpg"
+          className="d-block images col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12"
+          src="slider/3.jpg"
           alt="Third slide"
         />
-
       
       </Carousel.Item>
     </Carousel>
   );
 }
 
-export default UncontrolledExample;
+export default IndividualIntervalsExample;
