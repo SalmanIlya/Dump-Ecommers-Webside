@@ -4,14 +4,14 @@ const Reviews=[
         name:"	Nina",
         image:"/user/1.jpg",
         ratings:4.5,
-        text:"This switch was a great purchase! The ability to play handheld, on the dock, or in kickstand is pretty awesome. I like the oled screen it really has a nice video/picture quality to it. I also bought the hori split pad pro and the 8bitdo pro 2 controller with this and it’s a blast! I recommend the Oled Switch to any gamer of all ages"
+        text:"This switch was a great purchase! The ability to play handheld, on the dock, or in kickstand is pretty awesome. I like the oled screen it really has a nice video/picture quality to it. "
     },
     {
         id:2,
         name:"	Juan D.",
         image:"/user/2.jpg",
         ratings:4,
-        text: "I say it's a MUST upgrade. The battery life and new joy cons alone are already worth upgrading for so the OLED display just seals it. I wish I upgraded sooner but it's never too late. My gripes were the loose dock, hard to remove microSD card and hard to open game cart cover but none of them were big deal. I just hope that they put a faster storage but maybe we'll see it on the next generation Switch."
+        text: "I say it's a MUST upgrade. The battery life and new joy cons alone are already worth upgrading for so the OLED display just seals it. I wish I upgraded sooner but it's never too late. "
     },
     {
         id:3,
