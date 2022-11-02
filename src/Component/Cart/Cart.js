@@ -11,11 +11,7 @@ const Cart = () => {
 console.log(cart);
   return (
     <div  className='card-main-div'>
-      <Helmet>
-                <title>
-                    Cart page
-                </title>
-            </Helmet>
+     
 {
   cart.cart.length===0 ?
   <div className='text-center mt-3'>
