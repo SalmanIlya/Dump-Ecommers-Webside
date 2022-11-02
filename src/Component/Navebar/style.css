@@ -1,0 +1,29 @@
+.span{
+    position: absolute;
+    background: #f85606;
+    color: #fff;
+    /* top: -4px; */
+    font-weight: 400;
+    text-align: center;
+    /* right: -4px; */
+    text-align: center !important;
+    border: 3px solid #f85606;
+    padding: 5px!important;
+    /* height: 16px; */
+    min-width: 17px;
+    line-height: 4px;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 400px){
+   .navbar-btn{
+    margin-right: 1rem;
+   }
+   .navbar-nav{
+    margin-right: 1rem !important;
+   }
+}
+
+
