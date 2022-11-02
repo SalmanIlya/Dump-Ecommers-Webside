@@ -39,10 +39,7 @@ const Footer = () => {
                                                                       <h6 className="text-uppercase fw-bold mb-4">
                                                                                 <i className="fas fa-gem me-3"></i>Company name
                                                                       </h6>
-                                                                      <p>
-                                                                                Here you can use rows and columns to organize your footer content. Lorem ipsum
-                                                                                dolor sit amet, consectetur adipisicing elit.
-                                                                      </p>
+                                                                     
                                                             </div>
 
                                                             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
