@@ -9,28 +9,28 @@ const Nave = () => {
           return (
 <nav className="navbar navbar-expand-lg mb-5  bg-light navbar-fixed-top   fixed-top ">
                     <div className="container">
-                                        <Link className="navbar-brand  " to="/">Navbar</Link>
-                                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                                  <span className="navbar-toggler-icon"></span>
-                                        </button>
+                             <Link className="navbar-brand  " to="/">Navbar</Link>
+                             <button className="navbar-toggler navbar-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span className="navbar-toggler-icon"></span>
+                                        </button> 
                 <div className="collapse navbar-collapse ml-5 nav-ul " id="navbarNav">
-                                     <ul className="navbar-nav ">
- <li className="nav-item m-2 ">
+                                     <ul className="navbar-nav text-center mr-5 ">
+ <li className="nav-item  ">
 <Link className="nav-link active " aria-current="page" to="/">Home</Link>
 </li>
-<li className="nav-item m-2 ">
+<li className="nav-item  ">
 <Link className="nav-link active " aria-current="page" to="/product">Product</Link>
 </li>
 
-<li className="nav-item m-2 ">
+<li className="nav-item  ">
  <Link className="nav-link active " aria-current="page" to="/cart">Cart {
                             quantity === 0 ? <span></span> :
                 <span className='bg-warning text-dark  span' >{quantity}</span>}</Link>
 </li>
-<li className="nav-item m-2 ">
+<li className="nav-item  ">
 <Link className="nav-link active " aria-current="page" to="/contact">Contact</Link>
 </li>
-<li className="nav-item m-2 ">
+<li className="nav-item  ">
 <Link className="nav-link active " aria-current="page" to="/about">About</Link>
 </li>
 
