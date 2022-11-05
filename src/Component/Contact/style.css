@@ -1,0 +1,73 @@
+.contact-us{
+    width: 500px !important;
+    border: 0.1px solid rgb(126, 125, 125); 
+    border-radius: 12px;
+    height: 500px;
+}
+.contact-us input{
+    width: 400px;
+}
+.contact-us textarea {
+    width: 400px;
+    /* height:400px ; */
+    margin-right: 1rem;
+
+}
+
+
+@media only screen and (max-width:950px) {
+    .contact-us{
+        width:450px !important;
+    }
+    .contact-us input {
+        width: 350px !important;
+    }
+    .contact-us textarea{
+        width: 350px !important;
+    }
+}
+@media only screen and (max-width:750px) {
+    .contact-us{
+        width:380px !important;
+    }
+    .contact-us input {
+        width: 280px !important;
+    }
+    .contact-us textarea{
+        width: 280px !important;
+    }
+}
+@media only screen and (max-width:500px) {
+    .contact-us{
+        width:350px !important;
+    }
+    .contact-us input {
+        width: 250px !important;
+    }
+    .contact-us textarea{
+        width: 250px !important;
+    }
+}
+@media only screen and (max-width:400px) {
+    .contact-us{
+        width:280px !important;
+    }
+    .contact-us input {
+        width: 180px !important;
+    }
+    .contact-us textarea{
+        width: 180px !important;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .contact-us{
+        width:220px !important;
+    }
+    .contact-us input {
+        width: 170px !important;
+    }
+    .contact-us textarea{
+        width: 170px !important;
+    }
+}
