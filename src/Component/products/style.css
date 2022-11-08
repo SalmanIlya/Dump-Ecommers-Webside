@@ -1,0 +1,357 @@
+.hero-div{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    height: 500px;
+}
+
+
+.hero-image{
+    width: 30rem !important;
+    height: 400px !important;
+    margin-right: 0 !important;
+
+}
+.hero-text-div{
+    width: 30rem;
+    margin-left: 2rem !important;
+}
+
+.side-nave-div{
+    width: 25%;
+}
+.card-img-top{
+    max-width: 190px ;
+    max-height:240px;
+    margin-left: 20px;
+}
+.side-nave-div h4{
+    font-size: 24px !important;
+}
+.btn-side-nav{
+    font-size: 16px !important;
+    width: 9rem !important;
+    margin: 5px !important;
+}
+.product{
+    margin-top: 2rem;
+    display: flex; 
+    flex-direction: column;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card img{
+    margin-right: 10px !important;
+}
+.side-nave-div{
+padding: 1rem;
+}
+.div-btn{
+    width: 70%;
+}
+
+@media only screen and (max-width: 1200px){
+    .card-img-top{
+        max-width: 1850px ;
+        max-height:235px;
+        margin-left: 18px;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .card-img-top{
+        max-width: 170px ;
+        max-height:200px;
+        margin-left: 12px;
+    }
+    .hero-div{
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        align-items: center !important;
+        height: 450px;
+    }
+    
+    
+    .hero-image{
+        width: 20rem !important;
+        height: 350px !important;
+        margin-right: 0 !important;
+    
+    }
+    .hero-text-div{
+        width: 30rem;
+    }
+    .div-btn button{
+        margin: 1rem !important;
+    }
+   
+}
+@media only screen and (max-width: 990px){
+    .hero-text-div h1{
+        font-size: 22px; 
+    }  
+    .hero-text-div{
+        width: 25rem;
+    }
+}
+
+
+@media only screen and (max-width: 960px){
+   .card{
+    max-width: 150px  !important;
+   }
+    .card-img-top{
+        max-width: 140px ;
+        max-height: 180px; 
+    }
+    .div-btn button{
+        width: auto !important;
+        /* display: none !important; */
+        
+    }
+    
+}
+@media only screen and (max-width: 850px){
+   .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+   }
+   
+    .card-img-top{
+        max-width: 130px;
+        max-height:160px;
+        margin-right: 5px !important;
+    
+    }
+    .btn1{
+        width: 6.5rem;
+        height:  2rem;
+        padding-bottom: 5px !important;
+        font-size: 14px !important;
+    
+
+    }
+    .hero-div{
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: center;
+        /* padding-top: 10rem; */
+        
+    }
+    .hero-image{
+        width: 15rem !important;
+        height: 250px !important;
+        /* margin-left: 10rem !important; */
+        padding: 0;
+        /* margin-bottom: 2rem; */
+    
+    }
+    .hero-text-div{
+        width:15rem;
+        font-size: 12px !important;
+        /* margin-top: 2rem; */
+    }
+    .div-btn button{
+        /* width: 20rem !important;  */
+        /* height: 3rem; */
+        font-size: 13px;
+        margin: 5px;
+
+    }
+}
+
+@media only screen and (max-width: 770px){
+   .product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+   .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  width: 120px !important;
+   }
+    .card-img-top{
+        max-width: 110px;
+        max-height:140px;
+        margin-right: 5px;
+    
+    }
+   
+    .btn1{
+        width: 6.2rem;
+        height:  2rem;
+        font-size: 14px !important;
+    
+
+    }
+}
+@media only screen and (max-width:695px){
+    .card{
+       
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 170px !important;
+    max-height:270px !important;
+    margin: 2px;
+    }
+    .card-img-top{
+        max-width: 90px;
+        max-height:100px;
+        
+    }
+    .btn1{
+        width: 6.5rem;
+        height:  2rem;
+        font-size: 14px !important;
+        text-indent: 1px;
+
+    }
+    .btn-side-nav{
+        font-size: 13px !important;
+        width: 8rem;
+    }
+}
+@media only screen and (max-width: 637px){
+.side-nave-div h4{
+    font-size: 20px !important;
+}
+.btn-side-nav{
+    font-size: 11px !important;
+    width: 6.5rem;
+}
+}
+
+@media only screen and (max-width: 536px){
+    .product{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+    }
+    .card{
+     width: 110px !important;
+     height:300px !important;
+     margin: 2px;
+     height: 250px;
+    }
+    .btn1{
+        width: 5.5rem;
+        height:  2rem;
+        font-size: 11px !important;
+
+    }
+    .card-body{
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+ 
+     .card-img-top{
+         max-width: 100px;
+         max-height:110px;
+     
+     }
+     .side-nave-div h4{
+        font-size: 17px !important;
+    }
+    .btn-side-nav{
+        font-size: 9.5px !important;
+        width: 5.9rem;
+    }
+    .hero-div{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        /* padding-top: 10rem; */
+        
+    }
+    .hero-image{
+        width: 210px !important;
+        height: 210px !important;
+        padding: 0;
+    
+    }
+    .hero-text-div{
+        width:13rem;
+        font-size: 10px !important;
+        margin-left: 2rem;
+    }
+    .div-btn button{
+        width: auto;
+        font-size: 13px;
+        
+    }
+}
+@media only screen and (max-width: 509px){
+    .side-nave-div{
+        width: 40% !important;
+    }
+    .side-nave-div h4{
+        font-size: 15px !important;
+    }
+    .btn-side-nav{
+        font-size: 9px !important;
+        width: 5.5rem;
+    }
+}
+ 
+ 
+@media only screen and (max-width: 400px){
+    .product{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+    }
+    .card{
+     width: 110px !important;
+     height:250px !important;
+     margin: 2px;
+    }
+    .btn1{
+        width: 5rem;
+        height:  1.5rem;
+        font-size: 10px !important;
+        text-indent: 1px;
+
+    }
+    .card-body{
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+ 
+     .card-img-top{
+         max-width: 90px;
+         max-height:110px;
+         margin-right: 10px;
+     
+     }
+     .side-nave-div h4{
+        font-size: 13px !important;
+    }
+    .btn-side-nav{
+        font-size: 9px !important;
+        width: 6rem !important;
+        margin: 1px !important;
+    }
+ }
