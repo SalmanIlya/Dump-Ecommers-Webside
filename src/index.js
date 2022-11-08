@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { HelmetProvider } from 'react-helmet-async';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -12,7 +13,9 @@ root.render(
   <Provider store={store}>
     <React.StrictMode>
       <BrowserRouter>
+      <HelmetProvider>
       <App />
+      </HelmetProvider>
     </BrowserRouter>
     </React.StrictMode>
   </Provider>

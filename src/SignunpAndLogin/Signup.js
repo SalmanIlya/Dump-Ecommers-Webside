@@ -1,9 +1,12 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import "./style.css"
-const Contact = () => {
+const Signup = () => {
   return (
     <div className='contact pt-2'>
-
+<Helmet>
+  <title>signup</title>
+</Helmet>
 
 <div className='d-flex flex-column container p-3   text-center contact-div '>
 <h1><strong>
@@ -22,4 +25,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Signup

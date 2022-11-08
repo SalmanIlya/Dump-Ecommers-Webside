@@ -1,9 +1,15 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 
 const PageNotFound = () => {
           return (
 <div className="d-flex align-items-center justify-content-center vh-100">
+<Helmet>
+        <title>
+          Page not found
+        </title>
+      </Helmet>
                               <div className="text-center row">
                                         <div className=" col-md-6">
                                                   <img src="https://cdn.pixabay.com/photo/2017/03/09/12/31/error-2129569__340.jpg" alt=""

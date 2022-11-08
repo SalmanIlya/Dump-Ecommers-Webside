@@ -1,10 +1,15 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import "./style.css"
 const Contact = () => {
   return (
     <div className='contact pt-3'>
 
-
+<Helmet>
+        <title>
+          Contact us
+        </title>
+      </Helmet>
 <div className='d-flex flex-column container p-3   text-center contact-us '>
 <h1><strong>
     Contact us

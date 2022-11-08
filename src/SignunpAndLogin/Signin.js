@@ -1,10 +1,15 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import "./style.css"
-const Contact = () => {
+const Signin = () => {
   return (
     <div className='contact pt-2'>
 
-
+<Helmet>
+        <title>
+          Signin
+        </title>
+      </Helmet>
 <div className='d-flex flex-column container p-3 ml-2    text-center contact-div '>
 <h1><strong>
     Login your Account
@@ -20,4 +25,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Signin

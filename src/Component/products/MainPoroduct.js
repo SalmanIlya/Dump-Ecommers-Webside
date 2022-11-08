@@ -4,6 +4,7 @@ import SideNav from "./SideNav";
 import Product from "./Product";
 import axios from "axios";
 import "./style.css";
+import { Helmet } from "react-helmet-async";
 
 const MainPoroduct = () => {
 
@@ -25,6 +26,11 @@ const MainPoroduct = () => {
 
   return (
     <div className="mt-3">
+       <Helmet>
+        <title>
+        Products
+        </title>
+      </Helmet>
       <HeroSection />
       <div className="d-flex ">
         <SideNav categories={categories} setCategory={(category) => setCategory(category)} />

@@ -6,7 +6,7 @@ const Paymentscreen = () => {
     <div className='main-div  '>
       <Helmet>
                 <title>
-                    Payment page
+                    Payment 
                 </title>
             </Helmet>
       <div>

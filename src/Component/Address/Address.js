@@ -1,11 +1,16 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import { useNavigate } from 'react-router-dom'
 import "./style.css"
 const Address = () => {
   const  navagete=useNavigate()
   return (
     <div className='contact pt-3'>
-
+ <Helmet>
+        <title>
+          Address please
+        </title>
+      </Helmet>
 
 <div className='d-flex flex-column container p-3   text-center contact-us '>
 <h1><strong>

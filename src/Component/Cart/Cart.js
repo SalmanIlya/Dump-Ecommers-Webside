@@ -1,16 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Helmet } from 'react-helmet-async'
 import {  useSelector ,useDispatch} from "react-redux"
 import { useNavigate } from 'react-router-dom'
-import {increase,decrease,removeItem,clearCart} from "../../Store/AddCart"
+import {increase,decrease,removeItem,clearCart, getTotal} from "../../Store/AddCart"
 import "./style.css"
 const Cart = () => {
   const dispatch=useDispatch()
   const navigate=useNavigate()
   const cart = useSelector((state) => state.cartitem)
-console.log(cart);
+ useEffect(()=>{
+  dispatch(getTotal())
+ },[cart,dispatch])
+
   return (
     <div  className='card-main-div pt-2'>
-     
+      <Helmet>
+        <title>
+          Card
+        </title>
+      </Helmet>
 {
   cart.cart.length===0 ?
   <div className='text-center '>
@@ -62,7 +70,7 @@ return (
 </div>
 <div className='mydiv'>
   <span>Subtotal</span>
-  <span><strong> ${cart.cartTotalAmount}</strong></span>
+  <span><strong> ${}</strong></span>
 <button className="btn btn-warning" onClick={()=>{
   navigate("/address")
 }}>Proceed to checkout</button>

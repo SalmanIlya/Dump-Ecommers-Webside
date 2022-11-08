@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Helmet } from 'react-helmet-async'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { addToCart } from '../../Store/AddCart'
@@ -13,11 +14,15 @@ const ProductDetail = () => {
         const product=useSelector((state)=>state.oneProductStore.Product)
         useEffect(()=>{
             dispatch(GetProduct(id))
-        },[id])
+        },[dispatch,id])
         console.log(product);
   return (
         <div>
-
+ <Helmet>
+        <title>
+          product detail page
+        </title>
+      </Helmet>
     <div className='detail-page d-flex  container '>
 <div >
         <img src={product.image} alt={product.title} className=" img " />

@@ -8,12 +8,13 @@ import "./App.css"
 import 'font-awesome/css/font-awesome.min.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import ProductDetail from './Component/ProductDetail/ProductDetail'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from './Component/footer/Footer'
 import Address from './Component/Address/Address'
 import Signin from './SignunpAndLogin/Signin'
 import Signup from './SignunpAndLogin/Signup'
 import About from './Component/about/About'
-import {ToastContainer} from "react-toastify"
 import Paymentscreen from './Component/Payment/Paymentscreen'
 import Product from './Component/products/MainPoroduct'
 import Contact from './Component/Contact/Contact'
