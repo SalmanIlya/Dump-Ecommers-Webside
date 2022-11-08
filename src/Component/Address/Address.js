@@ -2,30 +2,35 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import "./style.css"
 const Address = () => {
-  const navagete=useNavigate()
+  const  navagete=useNavigate()
   return (
-    <div className="text-center address ">
+    <div className='contact pt-3'>
 
-<div className='d-flex flex-column container p-3 card w-50 h-75'>
-<h1>
-    <strong>
-     Enter your Address
-    </strong>
-  </h1>
-<input type="text" name='name' className='m-3 input' placeholder='Name'  />
-<input type="text" name='moble' className='m-3 input' placeholder='Phone Number'  />
-<input type="text" name='email' className='m-3 input' placeholder='Email'  />
-<input type="text" name='country' className='m-3 input' placeholder='Country'  />
-<input type="text" name='city' className='m-3 input' placeholder='city'  />
-<input type="text" name='zip-code' className='m-3 input' placeholder='zip-code'  />
-<textarea  rows={5} name="massage" className='m-3 ' placeholder='Enter your massage' />
-<button className='btn btn-warning m-3' onClick={()=>{
-  navagete("/cart/payment")
-}}>
-  Save
-</button>
+
+<div className='d-flex flex-column container p-3   text-center contact-us '>
+<h1><strong>
+ Enter Your  Address 
+    </strong></h1>
+    <div>
+    <input type="text" name='name' className='m-3 input' placeholder='Name'  />
+<input type="email" name='email' className='m-3 input ' placeholder='Email'  />
+<input type="text" name='phoneNumber' className='m-3 input ' placeholder='PhoneNumber'  />
+<input type="text" name='country' className='m-3 input ' placeholder='Country'  />
+<input type="text" name='city' className='m-3 input ' placeholder='City'  />
+<input type="text" name='zipCode' className='m-3 input ' placeholder='Zip=Code'  />
+    </div>
+
+<div className=''>
+<textarea  rows={5}   name="massage" className='m-3 ' placeholder='complete address Eg(Country/City/HomeTown/House No/Etc ...)' />
+
 </div>
+<div>
+<button className='btn btn-warning mt-3' onClick={()=>{
+  navagete("/cart/payment")
+}}>save</button>
 
+</div>
+</div>
     </div>
   )
 }
