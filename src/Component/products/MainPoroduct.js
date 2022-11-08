@@ -23,9 +23,8 @@ const MainPoroduct = () => {
     fetchdata();
   }, []);
 
-
   return (
-    <div>
+    <div className="mt-3">
       <HeroSection />
       <div className="d-flex ">
         <SideNav categories={categories} setCategory={(category) => setCategory(category)} />

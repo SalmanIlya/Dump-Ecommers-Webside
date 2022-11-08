@@ -24,7 +24,7 @@ const Home = () => {
           Reviews.map((item)=>{
             
             return (
-              <div className='div-reviews  bg-light ' key={item.id}>
+              <div className='div-reviews  bg-light  p-4' key={item.id}>
                 <p>
                   {item.name}
                 </p>

@@ -14,26 +14,27 @@ const Product = (props) => {
     : allProduct;
 
   return (
-    <div className="w-100">
+    <div className="w-100 ">
       <h3 className="text-center m-5"> Our Product</h3>
       <div className="products container ">
         {products.map((item) => {
+          const { id, image, categort, title, price, rating, count } = item;
           return (
-            <div className="card " key={item.id}>
-              <Link to={`/product/${item.id}`}>
+            <div className="card " key={id}>
+              <Link to={`/product/${id}`}>
                 <img
-                  src={item.image}
+                  src={image}
                   className="card-img-top"
-                  alt={item.categort}
+                  alt={categort}
                 />
               </Link>
               <div className="card-body">
-                <p className="card-title">{item.title}</p>
+                <p className="card-title">{title.slice(0,7)}</p>
                 <h5 className="card-title">
-                  <strong>${item.price}</strong>{" "}
+                  <strong>${price}</strong>{" "}
                   <Rating
-                    rating={item.rating}
-                    numReviews={item.count}
+                    rating={rating}
+                    numReviews={count}
                     className="color"
                   />
                 </h5>

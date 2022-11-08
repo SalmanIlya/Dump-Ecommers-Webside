@@ -1,4 +1,4 @@
-.img{
+.images{
     width: 100% !important;
     height: 500px !important;
     display: none;
@@ -6,31 +6,31 @@
 }
 
 @media only screen and (max-width: 1200px){
-    img{
+    .images{
         width: 100%;
-        height: 500px;
+        height: 450px !important ;
     }
 }
 @media only screen and (max-width: 1024px){
-    img{
+    .images{
         width: 100%;
         height: 400px;
     }
 }
 @media only screen and (max-width: 800px){
-    img{
+    .images{
         width: 100%;
         height: 400px;
     }
 }
 @media only screen and (max-width: 710px){
-    img{
+    .images{
         width: 100% !important;
         height: 390px;
     }
 }
 @media only screen and (max-width: 700px){
-    img{
+    .images{
         width: 100% !important;
         height: 400px;
         right: -20;
@@ -38,25 +38,25 @@
     }
 }
 @media only screen and (max-width: 690px){
-    img{
+    .images{
         width: 100% !important;
         height: 390px !important;
     }
 }
 @media only screen and (max-width: 590px){
-    img{
+    .images{
         width: 100% !important;
         height: 380px !important;
     }
 }
 @media only screen and (max-width: 400px){
-    img{
+    .images{
         width: 100% !important;
         height: 350px !important;
     }
 }
 @media only screen and (max-width: 350px){
-    img{
+    .images{
         width: 100% !important;
         height: 300px !important;
     }

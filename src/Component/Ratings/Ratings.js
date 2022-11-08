@@ -1,10 +1,11 @@
 import React from 'react'
-
-const Ratings = ({ratings}) => {
+import "./style.css"
+const Ratings = (props) => {
+  const {ratings}=props
   return (
     <div>
       <span>
- <i className={ratings>=1 ?'fas fa-star text-warning':
+ <i className={ratings>=1 ?'fas fa-star text-warning     ':
 ratings>=1.5 ? 'fas fa-star-half-alt text-warning':
 'far fa-star text-warning'
 }></i> 

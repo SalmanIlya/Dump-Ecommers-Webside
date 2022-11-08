@@ -15,27 +15,27 @@ const Nave = () => {
                                         </button> 
                 <div className="collapse navbar-collapse ml-5 nav-ul " id="navbarNav">
                                      <ul className="navbar-nav text-center mr-5 ">
- <li className="nav-item  ">
-<Link className="nav-link active " aria-current="page" to="/">Home</Link>
+ <li className="nav-item   ">
+<Link className="nav-link mx-1 mt-1 active " aria-current="page" to="/">Home</Link>
 </li>
-<li className="nav-item  ">
-<Link className="nav-link active " aria-current="page" to="/product">Product</Link>
+<li className="nav-item   ">
+<Link className="nav-link mx-1 mt-1 active " aria-current="page" to="/product">Product</Link>
 </li>
 
-<li className="nav-item  ">
- <Link className="nav-link active " aria-current="page" to="/cart">Cart {
+<li className="nav-item   ">
+ <Link className="nav-link mx-1 mt-1 active " aria-current="page" to="/cart">Cart {
                             quantity === 0 ? <span></span> :
-                <span className='bg-warning text-dark  span' >{quantity}</span>}</Link>
+                <span className='bg-warning text-dark  span ' >{quantity}</span>}</Link>
+</li>
+<li className="nav-item   ">
+<Link className="nav-link mx-1 mt-1 active " aria-current="page" to="/contact">Contact</Link>
 </li>
 <li className="nav-item  ">
-<Link className="nav-link active " aria-current="page" to="/contact">Contact</Link>
-</li>
-<li className="nav-item  ">
-<Link className="nav-link active " aria-current="page" to="/about">About</Link>
+<Link className="nav-link mx-1 mt-1 active " aria-current="page" to="/about">About</Link>
 </li>
 
- <li className='nav-item m-2'><button type="button" className="btn btn-warning "><Link to="/sign/in" className='text-decoration-none text-dark'>Signin</Link></button></li>
- <li className='nav-item m-2'><button type="button" className="btn btn-warning"><Link to="/sign/up" className='text-decoration-none text-dark'>Signup</Link></button></li>
+ <li className='nav-item  m-2'><button type="button" className="btn btn-warning btn-lg btn-sm btn-xs "><Link to="/sign/in" className='text-decoration-none text-dark'>Signin</Link></button></li>
+ <li className='nav-item  m-2'><button type="button" className="btn btn-warning btn-lg btn-sm btn-xs"><Link to="/sign/up" className='text-decoration-none text-dark'>Signup</Link></button></li>
 
                                                   </ul>
                                         </div>
