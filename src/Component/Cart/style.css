@@ -1,0 +1,38 @@
+@media only screen and (max-width: 712px){
+   .div-1{
+    font-size: 19px;
+   }
+    table{
+font-size: 15px !important;
+width: 25rem !important;
+    }
+    th{
+        margin: 5px;
+    }
+    td{
+        margin: 5px;
+    }
+    tr{
+        display: flex;
+        flex-direction: row !important;
+    }
+    
+    .cardimg{
+    height: 2rem !important;
+    width: 2rem !important;
+}
+
+}
+@media only screen and (max-width: 375px){
+.div-1{
+    font-size: 16px !important;
+    margin-left: 1rem;
+}
+}
+@media only screen and (max-width: 330px){
+
+    .div-1{
+        font-size: 16px !important;
+        margin-left: 2.5rem !important;
+    }
+}

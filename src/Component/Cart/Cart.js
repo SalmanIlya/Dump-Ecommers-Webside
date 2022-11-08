@@ -1,5 +1,4 @@
 import React from 'react'
-import { Helmet } from 'react-helmet-async'
 import {  useSelector ,useDispatch} from "react-redux"
 import { useNavigate } from 'react-router-dom'
 import {increase,decrease,removeItem,clearCart} from "../../Store/AddCart"
@@ -10,16 +9,19 @@ const Cart = () => {
   const cart = useSelector((state) => state.cartitem)
 console.log(cart);
   return (
-    <div  className='card-main-div'>
+    <div  className='card-main-div pt-2'>
      
 {
   cart.cart.length===0 ?
-  <div className='text-center mt-3'>
+  <div className='text-center '>
     <h3 className='mt-3'>Cart Is Empty Please Go For Shopping</h3>
-    <button className="btn btn-warning btn1 mt-3" onClick={()=>{navigate("/")}}>Go For Shoping</button>
+    <button className="btn btn-warning  mt-3" onClick={()=>{navigate("/")}}>Go For Shoping</button>
     </div>:
   <div>
-    <h3 className='text-center mt-3 my-3'>Cart Products</h3>
+    <div >
+
+    <h3 className='text-center div-1 '>Cart Products</h3>
+    </div>
     <table className="table container">
   <thead>
     <tr>
@@ -37,11 +39,13 @@ return (
     <tr>
       <td ><img src={item.image} alt={item.title} className="cardimg mt-1"  /></td>
       <td className=''><strong> ${(item.price).toFixed(2)}</strong></td>
-      <td className=''><strong>$ {(item.price*item.quantity).toFixed(2)}</strong></td>
+      <td className=''><strong>$ {(item.price*item.CardQuantity
+).toFixed(2)}</strong></td>
       <td className='d-flex'>
-      <button className='btn btn-light' onClick={()=>{dispatch(increase(item.id))}}>+</button>
-        <p className='pt-3'>{item.quantity}</p>
-        <button className='btn btn-light' onClick={()=>{dispatch(decrease(item.id))}}>-</button>
+      <button className='btn btn-light h-75' onClick={()=>{dispatch(increase(item.id))}}>+</button>
+        <p className='mt-2 px-2'>{item.CardQuantity
+}</p>
+        <button className='btn btn-light h-75' onClick={()=>{dispatch(decrease(item.id))}}>-</button>
       </td>
       <td >
       <i onClick={()=>{dispatch(removeItem(item.id))}} className="fa-regular fa-trash-can"></i>
