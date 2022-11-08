@@ -1,31 +1,23 @@
 import React from 'react'
 import "./style.css"
-const Signin = () => {
+const Contact = () => {
   return (
-    <div className='log-form'>
+    <div className='contact pt-2'>
 
-<div className='d-flex flex-column container w-25 h-25 m-5 p-2 card text-center'>
-<h1 className='mt-5'>
-    <strong>
-      Sign in
-    </strong>
-  </h1>
-<input type="text" name='email' className='m-3 input' placeholder='Email'  />
-<input type="text" name='subject' className='m-3 input' placeholder='Password'  />
-<button className='btn btn-warning m-3'>
-  Signin 
-</button>
-<div className='text-center'>
-or
+
+<div className='d-flex flex-column container p-3 ml-2    text-center contact-div '>
+<h1><strong>
+    Login your Account
+    </strong></h1>
+<input type="text" name='email' className='m-3 input ' placeholder='Email'  />
+<input type="password" name='password' className='m-3 input ' placeholder='Password'  />
+<div>
+<button className='btn btn-warning   '>send</button>
+
 </div>
-<button className='btn btn-warning m-3'>
-  signup
-</button>
 </div>
-
-
     </div>
   )
 }
 
-export default Signin
+export default Contact
