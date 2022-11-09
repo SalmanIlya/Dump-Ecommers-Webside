@@ -55,8 +55,17 @@
 padding: 1rem;
 }
 .div-btn{
-    width: 70%;
+    /* width: 40%; */
 }
+.div-btn button{
+    width: 7rem;
+}
+.btn:hover {
+    background-color: transparent !important;
+    color:#ffc720 !important;
+    border: 1px solid #ffc720 !important;
+}
+
 
 @media only screen and (max-width: 1200px){
     .card-img-top{
@@ -167,7 +176,7 @@ padding: 1rem;
         /* width: 20rem !important;  */
         /* height: 3rem; */
         font-size: 13px;
-        margin: 5px;
+        /* margin: px; */
 
     }
 }
