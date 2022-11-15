@@ -68,13 +68,16 @@ export const CartReducer = createSlice({
         position: toast.POSITION.BOTTOM_LEFT
     });
     },
+
     getTotal(state,action){
+
  let {total,quantity}= state.cart.reduce(
-  (cardTotal,cardItem)=>{
-    const {price,cartQuantity}=cardItem
-const totalItem=price*cartQuantity
+  
+  (cardTotal,carditem)=>{
+    const {price,CardQuantity}=carditem
+const totalItem=price*CardQuantity
 cardTotal.total += totalItem
-cardTotal.quantity += cartQuantity
+cardTotal.quantity += CardQuantity
 return cardTotal
   },{
     total:0,

@@ -70,7 +70,9 @@ return (
 </div>
 <div className='mydiv'>
   <span>Subtotal</span>
-  <span><strong> ${}</strong></span>
+  <span><strong>Totla Price:  ${cart.cartTotalAmount}</strong></span>
+  <span><strong>Total Quantity: ${cart.cartTotalQuantity}</strong></span>
+  <br/>
 <button className="btn btn-warning" onClick={()=>{
   navigate("/address")
 }}>Proceed to checkout</button>
