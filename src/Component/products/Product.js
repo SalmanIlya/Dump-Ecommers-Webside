@@ -59,6 +59,7 @@ const Product = (props) => {
         })}
       </div>
       
+        
       <div className="mt-5 d-flex justify-content-between ">
         <button className="btn btn-warning" onClick={()=>{
           if(a===0){
@@ -69,8 +70,21 @@ const Product = (props) => {
           }
            }}>{"<"}pervious</button>
             <button className="btn btn-warning" onClick={()=>{
-          b(a+4)
-          d(c+4)
+console.log(allProduct.length<c);
+              if(allProduct.length<=c || allProduct.length===c||products.length<=allProduct){
+                console.log("if is working");
+                d(8)
+                b(0)
+              }
+              else{
+                if(allProduct.length>=c){
+                  console.log("else is working");
+                b(a+4)
+                d(c+4)
+                }
+                
+                }
+         
           }
            }>Next{">"}</button>
       </div>
