@@ -21,7 +21,7 @@ const Home = () => {
       </div>
       <h3 className='text-center m-4'>
           <strong>
-            our reviews
+          Customer Reviews
           </strong>
         </h3>
       <div className='d-flex container  reviews'>
@@ -34,7 +34,7 @@ const Home = () => {
                 <p>
                   {item.name}
                 </p>
-<Ratings  ratings={item.ratings} />
+<Ratings newitem={item.newitem} />
 <p>
   {item.text}
 </p>

@@ -34,7 +34,7 @@ onMouseLeave={()=>{SetNumber()}}
 </div>
 
         <br/>
-        <textarea rows={5} cols={50} placeholder="Comment here ..."/>
+        <textarea rows={5} cols={50} className="textarea" placeholder="Comment here ..."/>
         </div>
 
         <button className='btn btn-warning'>Submit</button>

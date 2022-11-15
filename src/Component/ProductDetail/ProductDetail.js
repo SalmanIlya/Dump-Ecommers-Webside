@@ -15,7 +15,9 @@ const ProductDetail = () => {
         useEffect(()=>{
             dispatch(GetProduct(id))
         },[dispatch,id])
-        console.log(product);
+        // console.log(product);
+        // const item=product.rating
+//       const newitem=item.rate
   return (
         <div>
  <Helmet>
@@ -35,7 +37,7 @@ const ProductDetail = () => {
         <p>
                 {product.description}
         </p>
-        <Ratings rating={product.rating}/>
+        <Ratings />
         <p>
                 ${product.price}
         </p>

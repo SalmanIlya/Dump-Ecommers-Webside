@@ -21,7 +21,7 @@ const HeroSection = () => {
           </strong> 
            <br/> start shopping  now 
           </p>
-          <div className='d-flex justify-content-around div-btn'>
+          <div className='d-flex justify-content-around div-btn w-50'>
             <button className='btn btn-warning  ' onClick={()=>{
                 navagete("/")
             }}>Home</button>

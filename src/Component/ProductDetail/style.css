@@ -11,14 +11,15 @@
 .img{
     width: 25rem;
     margin-left: 2rem;
+    height: 25rem;
 }
 .div-2{
     width: 20%;
 }
-textarea {
+.textarea {
     width: 400px;
     margin-right: 1rem;
-    outline: 1px solid black !important;
+    /* outline: 1px solid black !important; */
 }
 
 @media only screen and (max-width: 992px){
@@ -33,7 +34,7 @@ textarea {
     .div-2{
         width: 18% !important;
     }  
-    textarea{
+    .textarea{
         width: 350px !important;
     } 
 }
@@ -50,7 +51,7 @@ textarea {
     .div-2{
         width: 15% !important;
     }   
-    textarea{
+    .textarea{
         width: 280px !important;
     }
 }
@@ -67,7 +68,7 @@ textarea {
     .div-2{
         width: 10% !important;
     }  
-    textarea{
+    .textarea{
         width: 250px !important;
     } 
 }
@@ -91,7 +92,7 @@ textarea {
     .div-2{
         height: 2rem;
     }   
-    textarea{
+    .textarea{
         width: 200px !important;
     }
 }
@@ -115,7 +116,7 @@ textarea {
     .div-2{
         height: 2rem;
     } 
-    textarea{
+    .textarea{
         width: 180px !important;
     }  
 }
