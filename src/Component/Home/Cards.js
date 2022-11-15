@@ -23,8 +23,10 @@ const Cards = () => {
     
     
             {product.slice(0, 4).map((item) => {
-              const { id, image, categort, title, price, rating, count } = item;
-              // console.log("title",title.Typeof());
+              const { id, image, categort, title, price, rating } = item;
+              const {rate,count}=rating
+         const newitem=rate.toFixed()
+              
               return (
                 <div className="card " key={id}>
                   <Link to={`/product/${id}`}>
@@ -35,7 +37,7 @@ const Cards = () => {
                     <h5 className="card-title">
                       <strong>${price}</strong>{" "}
                       <Rating
-                        rating={rating}
+                        newitem={newitem}
                         numReviews={count}
                         className="color"
                       />
