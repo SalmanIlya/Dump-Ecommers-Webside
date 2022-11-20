@@ -22,3 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 src/Component/Ratings/Ratings.js
+src/Component/Address.js
+src/Component/Address.js

@@ -11,6 +11,7 @@ const MainPoroduct = () => {
   const [allProduct, setAllProduct] = useState([]);
   const [categories, setCategories] = useState([]);
   const [category, setCategory] = useState("");
+  
 
   useEffect(() => {
     const fetchdata = async () => {
@@ -25,6 +26,7 @@ const MainPoroduct = () => {
   }, []);
 
   return (
+    
     <div className="mt-3">
        <Helmet>
         <title>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import './style.css'
 const SideNav = ({ categories, setCategory }) => {
   return (
     <div className=" side-nave-div bg-light">
