@@ -3,12 +3,12 @@ import "./style.css"
 
 const About = () => {
   return (
-    <div className='card-main-div'>
-      <div className='text-center'>
-      <h1><strong>About Us</strong></h1>
+    <div className='about-section '>
+    
+      <h1 className='headind'><strong>About Us</strong></h1>
 
       </div>
-    </div>
+  
   )
 }
 
