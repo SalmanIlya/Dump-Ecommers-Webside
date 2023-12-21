@@ -2,25 +2,29 @@ import React from "react";
 import './style.css'
 const SideNav = ({ categories, setCategory }) => {
   return (
-    <div className=" side-nave-div bg-light">
-      <h4 className="m-2">Categories</h4>
+    <div className=" side-nave-div">
+      
+      <div className="main-btn  ">
       {categories.map((categery) => {
+        
         return (
-          <div key={categery.id}>
-            <button
+          
+            <button key={categery.id}
               className="btn btn-warning btn-side-nav  btn-lg btn-md btn-sm"
               onClick={() => {
                 setCategory(categery);
               }}
             >
+              
               {categery}
             </button>
-          </div>
+       
         );
       })}
       <button className="btn btn-warning btn-side-nav  btn-lg btn-md btn-sm" onClick={()=>{
         setCategory("")
       }}>All</button>
+      </div>
     </div>
   );
 };

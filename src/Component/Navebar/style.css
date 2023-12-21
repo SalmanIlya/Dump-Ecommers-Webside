@@ -1,16 +1,34 @@
+
 .span{
     position: absolute;
     color: #fff;
     font-weight: 400;
     text-align: center;
     text-align: center !important;
-    padding: 5px!important;
+    /* padding: 5px!important; */
     height: 16px !important;
     min-width: 17px;
     line-height: 8px;
     padding: 10rem;
-    margin-bottom: 10px !important;
+    /* margin-bottom: 10px !important; */
     border-radius: 50%;
+}
+.logo{
+    width: 7rem;
+    height: 4rem;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.active{
+    color: "#fff";
+}
+
+@media only screen and (max-width: 990px){
+    .nav-ul{
+        justify-content: center !important;
+    }
 }
 
 

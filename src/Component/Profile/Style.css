@@ -1,0 +1,26 @@
+.profile{
+    margin-top: 8rem;
+
+}
+.main-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+    align-items: center !important;
+   
+}
+.box1{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #F18366;
+}
+.box2{
+    /* border: 1px solid black; */
+    width: 400px;
+    height: 250px;
+}

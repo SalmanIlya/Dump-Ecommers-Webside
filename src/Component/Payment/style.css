@@ -1,0 +1,16 @@
+.payment{
+    max-height: auto;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    color: white;
+    background-color: rgb(42, 240, 42);
+    padding: 5px;
+    font-size: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
