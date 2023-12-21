@@ -1,19 +1,31 @@
 .contact-div{
     width: 500px !important;
-    height: 400px;
-    border: 0.1px solid rgb(126, 125, 125); 
-    border-radius: 12px;
+    height: auto;
     display:  flex;
     flex-direction: center;
     justify-content: center;
     padding-left: 2rem !important;
     margin-top: 3rem !important;
+    margin-bottom: 3rem;
+    border-radius: 12px;
     
+}
+label {
+    font-size: 20px;
 }
 
 .contact-div input{
-    width: 400px;
+    width: 350px;
+    border: none;
+    outline: none;
+    border: 0.5px solid #5F6368;
+    padding: 5px;
+    border-radius: 7px;
+    /* background-color: rgb(240, 238, 238); */
+    font-size: 20px;   
 }
+
+
 .contact-div textarea {
     width: 400px;
 }
@@ -37,6 +49,7 @@
     .contact-div input {
         width: 280px !important;
     }
+   
     .contact-div textarea{
         width: 280px !important;
     }
@@ -48,6 +61,7 @@
     .contact-div input {
         width: 250px !important;
     }
+   
     .contact-div textarea{
         width: 250px !important;
     }
@@ -58,6 +72,9 @@
     }
     .contact-div input {
         width: 180px !important;
+    }
+    .p{
+        width: 180px;
     }
     .contact-div textarea{
         width: 180px !important;
@@ -71,6 +88,7 @@
     .contact-div input {
         width: 170px !important;
     }
+    
     .contact-div textarea{
         width: 170px !important;
     }
